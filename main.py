@@ -59,7 +59,7 @@ def get_result():
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    subparser = parser.add_subparsers(help='sub command')
+    subparser = parser.add_subparsers()
 
     run_parser = subparser.add_parser('run', help='run the hadoop task')
     run_parser.set_defaults(command_object=run_task)
